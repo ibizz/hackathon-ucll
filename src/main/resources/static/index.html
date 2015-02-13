@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackathon</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="page-header">
+    		<h1 id="content"></h1>
+    	</div>
+    </div>
+    <script type="text/javascript" src="/js/jquery-2.1.3.min.js"></script>
+  	<script type="text/javascript">
+	  	$.get("/hello", function(data) {
+	  	  $("#content").html(data.message);
+	  	});
+  	</script>
+  </body>
+</html>

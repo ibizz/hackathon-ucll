@@ -1,0 +1,7 @@
+---
+applications:
+  - name: hackathonapp
+    memory: 256MB
+    instances: 1
+    path: target/hackathon-app-1.0-SNAPSHOT.jar
+    buildpack: https://github.com/cloudfoundry/java-buildpack
