@@ -1,5 +1,0 @@
-= Opdracht AB Inbev
-
-:repo-source: https://raw.githubusercontent.com/ibizz/hackathon-ucll/master/docs
-
-include::{repo-source}/installatie.adoc[]
