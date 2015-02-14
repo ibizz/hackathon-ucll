@@ -1,5 +1,7 @@
 package be.ibizz.hackathon.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import be.ibizz.hackathon.domain.Greeting;
@@ -13,8 +15,11 @@ import be.ibizz.hackathon.domain.Greeting;
 @Service
 public class GreetingServiceImpl implements GreetingService {
 
+	private Logger logger = LoggerFactory.getLogger(GreetingServiceImpl.class);
+	
 	@Override
 	public Greeting sayHello() {
+		logger.info("Call sayHello()");
 		return new Greeting("Hello World!");
 	}
 

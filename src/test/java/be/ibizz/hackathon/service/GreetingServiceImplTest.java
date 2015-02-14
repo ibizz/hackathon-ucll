@@ -1,10 +1,11 @@
 package be.ibizz.hackathon.service;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import be.ibizz.hackathon.domain.Greeting;
-import static org.junit.Assert.*;
 
 /**
  * Deze klasse bevat de unit testen voor de GreetingServiceImpl
