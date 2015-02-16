@@ -22,3 +22,6 @@
 - [Opdract A (AB-Inbev)](/docs/OpdrachtA.md)
 - [Opdract B (IBM)](/docs/OpdrachtB.md)
 - [Opdract C (ING)](/docs/OpdrachtC.md)
+
+## Inspiratie
+- http://www.ibm.com/design/language/inspiration.shtml
