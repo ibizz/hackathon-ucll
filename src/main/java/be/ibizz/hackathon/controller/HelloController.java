@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import be.ibizz.hackathon.domain.Greeting;
-import be.ibizz.hackathon.service.GreetingService;
+import be.ibizz.hackathon.service.CloudantService;
 
 /**
  * Dit is een 'controller' klasse (dus de C uit MVC). Ze bevat een endpoint 
@@ -24,7 +24,7 @@ import be.ibizz.hackathon.service.GreetingService;
 public class HelloController {
 
 	@Autowired
-	private GreetingService greetingService;
+	private CloudantService greetingService;
 	
 	@RequestMapping("/hello")
 	public Greeting hello() {

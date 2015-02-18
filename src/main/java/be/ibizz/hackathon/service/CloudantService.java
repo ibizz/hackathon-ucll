@@ -8,7 +8,7 @@ import be.ibizz.hackathon.domain.Greeting;
  * Deze interface zorgt voor een contract tussen implementatie en de klasse waarin 
  * de functionaliteit wordt opgeroepen.
  */
-public interface GreetingService {
+public interface CloudantService {
 
 	Greeting sayHello();
 	

@@ -13,14 +13,16 @@ import be.ibizz.hackathon.domain.Greeting;
  * Andere klassen werken steeds tegen de interface, nooit rechtstreeks tegen deze klasse. 
  */
 @Service
-public class GreetingServiceImpl implements GreetingService {
+public class CloudantServiceImpl implements CloudantService {
 
-	private Logger logger = LoggerFactory.getLogger(GreetingServiceImpl.class);
+	private Logger logger = LoggerFactory.getLogger(CloudantServiceImpl.class);
 	
 	@Override
 	public Greeting sayHello() {
 		logger.info("Call sayHello()");
 		return new Greeting("Hello World!");
 	}
+
+
 
 }

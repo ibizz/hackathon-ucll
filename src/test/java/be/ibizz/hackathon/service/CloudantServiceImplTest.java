@@ -13,13 +13,13 @@ import be.ibizz.hackathon.domain.Greeting;
  * Merk op dat we hier de implementatie testen, en dus niet de interface. 
  * De interface is enkel het contract en bevat verder geen functionaliteit.
  */
-public class GreetingServiceImplTest {
+public class CloudantServiceImplTest {
 
-	private GreetingServiceImpl greetingService;
+	private CloudantServiceImpl greetingService;
 	
 	@Before
 	public void setUp() {
-		greetingService = new GreetingServiceImpl();
+		greetingService = new CloudantServiceImpl();
 	}
 	
 	@Test
