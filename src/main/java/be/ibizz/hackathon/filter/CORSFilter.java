@@ -6,6 +6,14 @@ import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Deze filter zorgt er voor dat Cross-origin resource sharing (CORS) toegelaten wordt.
+ * Zonder dit zou je geen JavaScript XHR requests kunnen doen naar een server dat niet op hetzelfde domein staat als
+ * waar de JavaScript wordt uitgevoerd.
+ *
+ * Bijvoorbeeld: http://localhost (JavaScript) naar http://hackathonapp.eu-gb.mybluemix.net/hello (Java, op de server)
+ */
+
 @Component
 public class CORSFilter implements Filter {
 

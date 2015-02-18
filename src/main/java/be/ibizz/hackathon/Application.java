@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * main-methode waardoor je een (embedded) application server kan starten vanuit 
  * je IDE.
  */
+
 @SpringBootApplication
 public class Application {
 
