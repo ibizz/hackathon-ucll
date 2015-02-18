@@ -1,11 +1,10 @@
 package be.ibizz.hackathon.service;
 
+import be.ibizz.hackathon.domain.Greeting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-
-import be.ibizz.hackathon.domain.Greeting;
 
 /**
  * Deze klasse is de implementatie van de GreetingService interface.
@@ -17,11 +16,11 @@ import be.ibizz.hackathon.domain.Greeting;
 public class CloudantServiceImpl implements CloudantService {
   private Logger logger = LoggerFactory.getLogger(CloudantServiceImpl.class);
 
-  @Value("${vcap.services.cloudantNoSQLDB.credentials.url:}")
+  @Value("${vcap.services.hackathon-cloudant.credentials.url:}")
   private String url;
-  @Value("${vcap.services.cloudantNoSQLDB.credentials.username:}")
+  @Value("${vcap.services.hackathon-cloudant.credentials.username:}")
   private String username;
-  @Value("${vcap.services.cloudantNoSQLDB.credentials.password:}")
+  @Value("${vcap.services.hackathon-cloudant.credentials.password:}")
   private String password;
 
   @Override
@@ -32,6 +31,20 @@ public class CloudantServiceImpl implements CloudantService {
     logger.info("username: {}", username);
     logger.info("password: {}", password);
 
+
+    Database client;
+   /* CloudantClient client = new CloudantClient(url, username, password);
+
+    System.out.println("Connected to Cloudant");
+    System.out.println("Server Version: " + client.serverVersion());
+
+    List<String> databases = client.getAllDbs();
+    System.out.println("All my databases : ");
+    for ( String db : databases ) {
+      System.out.println(db);
+    }*/
+
     return new Greeting("Hello World!");
   }
+
 }
