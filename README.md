@@ -41,7 +41,10 @@ export PATH=$PATH:/usr/java/jdk1.8.0_31/bin
 Als finale test
 
 1. Open een command prompt/bash/terminal venster
-2. Voer het volgende commando uit: ```java --version```
+2. Voer het volgende commando uit:<br>
+   ```
+   java --version
+   ```
 3. Indien de JVM aan geeft dat hij Java 8 version 31 is, dan is de installatie succesvol. 
 
 ## Installatie Eclipse
