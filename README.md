@@ -21,21 +21,28 @@ Wij hebben alvast 5 versies voorzien:
 
 Nadat de JVM correct is geïnstalleerd op jullie systeem, moeten de omgevingsvariablen nog correct geplaatst worden.
 
-* Windows
-    - set JAVA_HOME=c:\program files\java\jdk1.8.0_31\
-    - set PATH=%JAVA_HOME%\bin;%PATH%
+### Windows
+```
+set JAVA_HOME=c:\program files\java\jdk1.8.0_31\
+set PATH=%JAVA_HOME%\bin;%PATH%
+```
 
-* Macos X
-    - export JAVA_HOME=$(/usr/libexec/java_home)
+### Macos X
+```
+export JAVA_HOME=$(/usr/libexec/java_home)
+```
 
-* Linux
-    - export JAVA_HOME=/usr/java/jdk1.8.0_31/bin/java
-    - export PATH=$PATH:/usr/java/jdk1.8.0_31/bin
+### Linux
+```
+export JAVA_HOME=/usr/java/jdk1.8.0_31/bin/java
+export PATH=$PATH:/usr/java/jdk1.8.0_31/bin
+```
 
 Als finale test
-1 Open een command prompt/bash/terminal venster
-2 Voer het volgende commando uit: java --version
-3 Indien de JVM aan geeft dat hij Java 8 version 31 is, dan is de installatie succesvol. 
+
+1. Open een command prompt/bash/terminal venster
+2. Voer het volgende commando uit: ```java --version```
+3. Indien de JVM aan geeft dat hij Java 8 version 31 is, dan is de installatie succesvol. 
 
 ## Installatie Eclipse
 
