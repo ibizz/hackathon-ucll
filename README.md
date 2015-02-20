@@ -54,8 +54,6 @@ Als finale test
 ## Run Applicatie
 - Bekijk logging statement "b.i.h.service.GreetingServiceImpl: Call sayHello()"
 
-## Run JUnit Tests
-
 ## Bluemix
 
 ## Installatie CF CLI
