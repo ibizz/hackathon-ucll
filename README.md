@@ -3,7 +3,7 @@
 
 De volgende 3 stappen moeten enkel uitgevoerd worden indien dit nog niet gebeurd is. Deze zijn immers onderdeel van de opdrachten die op voorhand uitgevoerd moesten worden.
 
-De installatie-bestanden kunnen jullie vinden op de NAS. De correcte locatie hiervan is verkrijgbaar bij de begleiders.
+De installatie-bestanden kunnen jullie vinden op de NAS. De correcte locatie hiervan is verkrijgbaar bij de begeleiders.
 
 **Ga deze bestanden niet op internet zoeken. Hier zullen jullie teveel tijd mee verliezen!**
 
