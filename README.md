@@ -9,7 +9,7 @@ De installatie-bestanden kunnen jullie vinden op de NAS. De correcte locatie hie
 
 ## Installatie JDK
 
-Afhankelijk van je Operating System ga je de juiste JVM moeten installeren.
+Afhankelijk van je Operating System ga je de juiste JVM moeten installeren. Deze kan je via de Oracle site downloaden: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 Wij hebben alvast 5 versies voorzien:
 
