@@ -19,7 +19,7 @@ Wij hebben alvast 5 versies voorzien:
 * jdk-8u31-linux-i586.rpm: 32-bits Linux
 * jdk-8u31-linux-x64.rpm: 64-bits Linux
 
-Nadat de JVM correct is geïnstalleerd op jullie systeem, moeten de omgevingsvariablen nog correct geplaatst worden.
+Nadat de JVM correct is geïnstalleerd op jullie systeem, moeten de omgevingsvariabelen nog correct geplaatst worden.
 
 ### Windows
 ```
