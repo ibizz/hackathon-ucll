@@ -1,24 +1,18 @@
 package be.ibizz.hackathon.service;
 
-import be.ibizz.hackathon.domain.BreadMachine;
-import be.ibizz.hackathon.domain.City;
+import be.ibizz.hackathon.domain.Broodautomaat;
+import be.ibizz.hackathon.domain.Gemeente;
 
 import java.util.List;
 
-/**
- * Dit is een standaard java interface klasse. We doen hier niets specifiek.
- * <p>
- * Deze interface zorgt voor een contract tussen implementatie en de klasse waarin
- * de functionaliteit wordt opgeroepen.
- */
 public interface DataStoreService {
 
-  List<BreadMachine> findAllBreadMachines();
+  List<Broodautomaat> getBroodautomaten();
 
-  List<BreadMachine> findBreadMachinesInCity(String postCode);
+  List<Broodautomaat> findBroodautomatenInGemeente(String postCode);
 
-  List<City> findAllCities();
+  List<Gemeente> findAllGemeenten();
 
-  BreadMachine createBreadMachine(BreadMachine breadMachine);
+  Broodautomaat createBroodautomaat(Broodautomaat nieuweBroodautomaat);
 
 }

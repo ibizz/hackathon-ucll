@@ -8,12 +8,11 @@ import org.ektorp.http.StdHttpClient;
 import org.ektorp.impl.StdCouchDbConnector;
 import org.ektorp.impl.StdCouchDbInstance;
 import org.ektorp.spring.InitialDataLoader;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.core.io.DefaultResourceLoader;
+import org.springframework.core.io.ResourceLoader;
 
 import java.net.MalformedURLException;
 import java.util.List;
@@ -27,14 +26,12 @@ import java.util.List;
 @SpringBootApplication
 public class Application {
   private static final String DATABASE_NAME = "breaddb";
-  @Value("${vcap.services.hackathon-cloudant.credentials.host}")
+  @Value("${vcap.services.hackathon-cloudant.credentials.host:}")
   private String host;
-  @Value("${vcap.services.hackathon-cloudant.credentials.username}")
+  @Value("${vcap.services.hackathon-cloudant.credentials.username:}")
   private String username;
-  @Value("${vcap.services.hackathon-cloudant.credentials.password}")
+  @Value("${vcap.services.hackathon-cloudant.credentials.password:}")
   private String password;
-  @Autowired
-  private List<DataLoader> loaders;
 
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
@@ -61,8 +58,8 @@ public class Application {
   }
 
   @Bean
-  public InitialDataLoader initialDataLoader() throws MalformedURLException {
-    return new InitialDataLoader(loaders, new DefaultResourceLoader());
+  public InitialDataLoader initialDataLoader(List<DataLoader> loaders, ResourceLoader resourceLoader) throws MalformedURLException {
+    return new InitialDataLoader(loaders, resourceLoader);
   }
 
 }

@@ -1,9 +1,9 @@
 package be.ibizz.hackathon.service;
 
-import be.ibizz.hackathon.domain.BreadMachine;
-import be.ibizz.hackathon.domain.City;
-import be.ibizz.hackathon.repository.BreadMachineRepository;
-import be.ibizz.hackathon.repository.CityRepository;
+import be.ibizz.hackathon.domain.Broodautomaat;
+import be.ibizz.hackathon.domain.Gemeente;
+import be.ibizz.hackathon.repository.BroodautomaatRepository;
+import be.ibizz.hackathon.repository.GemeenteRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,37 +15,37 @@ import java.util.UUID;
 @Service
 public class CloudantService implements DataStoreService {
   private Logger LOGGER = LoggerFactory.getLogger(CloudantService.class);
-  private BreadMachineRepository breadMachineRepository;
-  private CityRepository cityRepository;
+  private BroodautomaatRepository automaatRepository;
+  private GemeenteRepository gemeenteRepository;
 
   @Autowired
-  public CloudantService(BreadMachineRepository breadMachineRepository, CityRepository cityRepository) {
-    this.breadMachineRepository = breadMachineRepository;
-    this.cityRepository = cityRepository;
+  public CloudantService(BroodautomaatRepository automaatRepository, GemeenteRepository gemeenteRepository) {
+    this.automaatRepository = automaatRepository;
+    this.gemeenteRepository = gemeenteRepository;
   }
 
   @Override
-  public List<BreadMachine> findAllBreadMachines() {
-    return breadMachineRepository.getAll();
+  public List<Broodautomaat> getBroodautomaten() {
+    return automaatRepository.getAll();
   }
 
   @Override
-  public List<BreadMachine> findBreadMachinesInCity(String postCode) {
-    return breadMachineRepository.findByPostcode(postCode);
+  public List<Broodautomaat> findBroodautomatenInGemeente(String postcode) {
+    return automaatRepository.findByPostcode(postcode);
   }
 
   @Override
-  public List<City> findAllCities() {
-    return cityRepository.getAll();
+  public List<Gemeente> findAllGemeenten() {
+    return gemeenteRepository.getAll();
   }
 
   @Override
-  public BreadMachine createBreadMachine(BreadMachine breadMachine) {
-    breadMachine.setId(UUID.randomUUID().toString());
-    LOGGER.debug("Creating broodautomaat: {}", breadMachine);
+  public Broodautomaat createBroodautomaat(Broodautomaat nieuweBroodautomaat) {
+    nieuweBroodautomaat.setId(UUID.randomUUID().toString());
+    LOGGER.debug("Creating broodautomaat: {}", nieuweBroodautomaat);
 
-    breadMachineRepository.add(breadMachine);
-    return breadMachine;
+    automaatRepository.add(nieuweBroodautomaat);
+    return nieuweBroodautomaat;
   }
 
 }

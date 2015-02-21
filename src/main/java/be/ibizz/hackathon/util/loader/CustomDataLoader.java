@@ -1,8 +1,7 @@
 package be.ibizz.hackathon.util.loader;
 
-import be.ibizz.hackathon.domain.BreadMachine;
-import be.ibizz.hackathon.domain.City;
-import com.google.gson.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.TypeFactory;
 import org.ektorp.CouchDbConnector;
 import org.ektorp.DocumentOperationResult;
 import org.ektorp.support.CouchDbDocument;
@@ -17,6 +16,7 @@ import java.util.*;
 public class CustomDataLoader {
   private static final Logger LOGGER = LoggerFactory.getLogger(CustomDataLoader.class);
   private CouchDbConnector db;
+  private ObjectMapper mapper = new ObjectMapper();
 
   public CustomDataLoader(CouchDbConnector db) {
     this.db = db;
@@ -27,39 +27,31 @@ public class CustomDataLoader {
    *
    * @param in
    */
-  public void loadCities(Reader in) {
+  public void load(Reader in, Class clazz) {
     try {
-      doLoadCity(in);
+      doLoad(in, clazz);
     } catch (Exception e) {
       throw Exceptions.propagate(e);
     }
   }
 
-  public void loadBroodmachines(Reader in) {
-    try {
-      doLoad(in);
-    } catch (Exception e) {
-      throw Exceptions.propagate(e);
-    }
-  }
-
-  private void doLoad(Reader in) throws IOException {
+  private <T extends CouchDbDocument> void doLoad(Reader in, Class clazz) throws IOException {
     Set<String> allIds = new HashSet<>(db.getAllDocIds());
 
-    JsonParser parser = new JsonParser();
-    JsonObject jsonObject = parser.parse(in).getAsJsonObject();
-    JsonArray results = jsonObject.get("docs").getAsJsonArray();
+    List<T> broodautomaten = mapper.readValue(in,
+      TypeFactory.defaultInstance().constructCollectionType(List.class, clazz));
 
     List<CouchDbDocument> documents = new ArrayList<>();
-    for (JsonElement element : results) {
-      BreadMachine couchDbDocument = new Gson().fromJson(element, BreadMachine.class);
+    for (T element : broodautomaten) {
+      if (element.getId() == null) {
+        element.setId(UUID.randomUUID().toString());
+      }
 
-      couchDbDocument.setId(UUID.randomUUID().toString());
-      if (!allIds.contains(couchDbDocument.getId())) {
-        allIds.add(couchDbDocument.getId());
-        documents.add(couchDbDocument);
+      if (!allIds.contains(element.getId())) {
+        allIds.add(element.getId());
+        documents.add(element);
       } else {
-        LOGGER.warn("This ID ({}) already exists in Cloudant", couchDbDocument.getId());
+        LOGGER.warn("This ID ({}) already exists in Cloudant", element.getId());
       }
     }
 
@@ -67,35 +59,7 @@ public class CustomDataLoader {
     if (saveResult.isEmpty()) {
       LOGGER.info("Successfully added {} documents", documents.size());
     } else {
-      LOGGER.warn("Only added {} of {} documents succesfully",  documents.size() - saveResult.size(), documents.size());
-    }
-  }
-
-  private void doLoadCity(Reader in) throws IOException {
-    Set<String> allIds = new HashSet<>(db.getAllDocIds());
-
-    JsonParser parser = new JsonParser();
-    JsonObject jsonObject = parser.parse(in).getAsJsonObject();
-    JsonArray results = jsonObject.get("docs").getAsJsonArray();
-
-    List<CouchDbDocument> documents = new ArrayList<>();
-    for (JsonElement element : results) {
-      City couchDbDocument = new Gson().fromJson(element, City.class);
-
-      couchDbDocument.setId(UUID.randomUUID().toString());
-      if (!allIds.contains(couchDbDocument.getId())) {
-        allIds.add(couchDbDocument.getId());
-        documents.add(couchDbDocument);
-      } else {
-        LOGGER.warn("This ID ({}) already exists in Cloudant", couchDbDocument.getId());
-      }
-    }
-
-    List<DocumentOperationResult> errors = db.executeBulk(documents);
-    if (errors.isEmpty()) {
-      LOGGER.info("Successfully added {} documents", documents.size());
-    } else {
-      LOGGER.warn("Only added {} of {} documents succesfully",  documents.size() - errors.size(), documents.size());
+      LOGGER.warn("Only added {} of {} documents succesfully", documents.size() - saveResult.size(), documents.size());
     }
   }
 }

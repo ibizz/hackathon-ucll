@@ -1,28 +1,35 @@
 package be.ibizz.hackathon.service;
 
-import be.ibizz.hackathon.domain.BreadMachine;
-import be.ibizz.hackathon.domain.City;
+import be.ibizz.hackathon.domain.Broodautomaat;
+import be.ibizz.hackathon.domain.Gemeente;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class MockDataService implements DataStoreService {
   @Override
-  public List<BreadMachine> findAllBreadMachines() {
+  public List<Broodautomaat> getBroodautomaten() {
+    List<Broodautomaat> broodautomaten = new ArrayList<>();
+    Broodautomaat automaat = new Broodautomaat();
+    automaat.setId(UUID.randomUUID().toString());
+    automaat.setType("broodautomaat");
     return null;
   }
 
   @Override
-  public List<BreadMachine> findBreadMachinesInCity(String postCode) {
+  public List<Broodautomaat> findBroodautomatenInGemeente(String postCode) {
     return null;
   }
 
   @Override
-  public List<City> findAllCities() {
+  public List<Gemeente> findAllGemeenten() {
     return null;
   }
 
   @Override
-  public BreadMachine createBreadMachine(BreadMachine breadMachine) {
+  public Broodautomaat createBroodautomaat(Broodautomaat nieuweBroodautomaat) {
     return null;
   }
+
 }
