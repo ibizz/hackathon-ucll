@@ -1,4 +1,4 @@
-package be.ibizz.hackathon.filter;
+package be.ibizz.hackathon.util.filter;
 
 import org.springframework.stereotype.Component;
 

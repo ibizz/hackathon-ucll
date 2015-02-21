@@ -1,0 +1,166 @@
+{
+  "docs": [
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Brusselsesteenweg 232",
+      "postcode": "3090",
+      "brood_beschikbaar": "false",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "false",
+      "speciaal_brood_aanwezig": "false"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Kerkstraat 126",
+      "postcode": "1851",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "true",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Waversesteenweg 29",
+      "postcode": "3090",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "true",
+      "bruin_brood_aanwezig": "false",
+      "speciaal_brood_aanwezig": "false"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Stationstraat 23",
+      "postcode": "3090",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Koning Albert I-straat 12",
+      "postcode": "9280",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Serbosstraat 8",
+      "postcode": "9200",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Heirbaan 118",
+      "postcode": "9200",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Leopold2laan 214",
+      "postcode": "9200",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Baasrodestraat 149",
+      "postcode": "9200",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Bijlokestraat 20",
+      "postcode": "9200",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Hanenstraat 231",
+      "postcode": "9255",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Kouterstraat 108",
+      "postcode": "9240",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Provinciale Baan 45",
+      "postcode": "9255",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Heirbaan 235",
+      "postcode": "9220",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Durmen 125",
+      "postcode": "9240",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Spieveldstraat 85",
+      "postcode": "9160",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Rivierstraat 6",
+      "postcode": "9080",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    },
+    {
+      "type": "broodautomaat",
+      "straat_en_nr": "Provincialeweg 51",
+      "postcode": "2890",
+      "brood_beschikbaar": "true",
+      "wit_brood_aanwezig": "false",
+      "bruin_brood_aanwezig": "true",
+      "speciaal_brood_aanwezig": "true"
+    }
+  ]
+}
