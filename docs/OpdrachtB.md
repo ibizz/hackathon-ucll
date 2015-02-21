@@ -11,12 +11,12 @@ Hoe jullie deze opdracht aanpakken, kiezen jullie zelf. Al moeten volgende zaken
 - Meer details tonen over een specifieke broodautomaat, waarbij je kan nagaan of er al dan niet brood beschikbaar is en wanneer de laatste update van deze automaat is doorgegeven.
 - Een broodautomaat moet kunnen toevoegen op een bepaald adres en de huidige brood status.
 
-# Uitbreidingen 1
+## Uitbreidingen 1
 - De status van een broodautomaat op een eenvoudige manier up daten
 - GPS locatie gebruiken om een nieuwe broodautomaat toe te voegen
 
 
-# Uitbreidingen 2
+## Uitbreidingen 2
 - Dichtsbijzijnde broodautomaten tonen
 - Google Maps integratie om broodautomaten te visualiseren
 - Uitgebreide status van een broodautomaat, hoeveel broden van welk type.
