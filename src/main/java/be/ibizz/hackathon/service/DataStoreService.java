@@ -15,4 +15,8 @@ public interface DataStoreService {
 
   Broodautomaat createBroodautomaat(Broodautomaat nieuweBroodautomaat);
 
+  Broodautomaat updateBroodautomaat(Broodautomaat broodautomaat);
+
+  Broodautomaat getBroodautomaat(String id);
+
 }

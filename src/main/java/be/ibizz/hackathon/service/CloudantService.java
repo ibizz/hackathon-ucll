@@ -48,4 +48,15 @@ public class CloudantService implements DataStoreService {
     return nieuweBroodautomaat;
   }
 
+  @Override
+  public Broodautomaat updateBroodautomaat(Broodautomaat broodautomaat) {
+    automaatRepository.update(broodautomaat);
+    return automaatRepository.get(broodautomaat.getId());
+  }
+
+  @Override
+  public Broodautomaat getBroodautomaat(String id) {
+    return automaatRepository.get(id);
+  }
+
 }
