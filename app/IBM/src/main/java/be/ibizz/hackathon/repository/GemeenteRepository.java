@@ -32,7 +32,7 @@ public class GemeenteRepository extends CouchDbRepositorySupport<Gemeente> imple
 
   @Override
   public void allDataLoaded() {
-    LOGGER.info("Finished initial City data upload");
+    LOGGER.info("Finished initial Gemeente data upload");
   }
 
   @Override
