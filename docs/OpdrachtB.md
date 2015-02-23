@@ -16,7 +16,6 @@ Hoe jullie deze opdracht aanpakken, kiezen jullie zelf. Al moeten volgende zaken
 - GPS locatie gebruiken om een nieuwe broodautomaat toe te voegen
 
 *Uitbreidingen 2*
-- Dichtsbijzijnde broodautomaten tonen
-- Google Maps integratie om broodautomaten te visualiseren
+- Maps integratie om broodautomaten te visualiseren aan de hand van Google Maps, Apple Maps, OpenStreetMaps, ...  (bv dichtbijzijnde, alle in een bepaalde gemeente, ...)
 - Uitgebreide status van een broodautomaat, hoeveel broden van welk type.
 - Gamification elementen inbouwen om de gebruiker te stimuleren om vaker een bijdrage te leveren in de applicatie
