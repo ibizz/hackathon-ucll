@@ -1,4 +1,4 @@
-# Opdracht IBM: Opzoek naar een Broodautomaat
+# Opdracht IBM: Find-a-Broodautomaat mobile application
 Voor deze opdracht ontwikkelen jullie een mobiele web applicatie om de status van broodautomaten in je regio op te zoeken en aan te vullen als de status niet meer up to date is. 
 
 Als gebruiker kan je broodautomaten in België zoeken en zien of er nog brood aanwezig is of niet. 
