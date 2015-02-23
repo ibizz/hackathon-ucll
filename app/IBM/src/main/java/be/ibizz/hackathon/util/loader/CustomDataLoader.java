@@ -36,23 +36,12 @@ public class CustomDataLoader {
   }
 
   private <T extends CouchDbDocument> void doLoad(Reader in, Class clazz) throws IOException {
-    Set<String> allIds = new HashSet<>(db.getAllDocIds());
-
     List<T> inputDocuments = mapper.readValue(in,
       TypeFactory.defaultInstance().constructCollectionType(List.class, clazz));
 
     List<CouchDbDocument> outputDocuments = new ArrayList<>();
     for (T element : inputDocuments) {
-      if (element.getId() == null) {
-        element.setId(UUID.randomUUID().toString());
-      }
-
-      if (!allIds.contains(element.getId())) {
-        allIds.add(element.getId());
-        outputDocuments.add(element);
-      } else {
-        LOGGER.warn("This ID ({}) already exists in Cloudant", element.getId());
-      }
+      outputDocuments.add(element);
     }
 
     List<DocumentOperationResult> saveResult = db.executeBulk(outputDocuments);

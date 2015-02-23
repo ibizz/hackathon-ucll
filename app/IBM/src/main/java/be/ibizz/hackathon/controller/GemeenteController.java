@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@RequestMapping(value = "/api/gemeente")
 public class GemeenteController {
   @Autowired
   private DataStoreService dataStoreService;
 
-  @RequestMapping(value = "gemeente", method = RequestMethod.GET)
-  public List<Gemeente> getAllGemeenten() {
+  @RequestMapping(method = RequestMethod.GET)
+  public List<Gemeente> getGemeenten() {
     return dataStoreService.findAllGemeenten();
   }
 

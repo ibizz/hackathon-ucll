@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 import java.util.UUID;
@@ -41,10 +42,9 @@ public class CloudantService implements DataStoreService {
 
   @Override
   public Broodautomaat createBroodautomaat(Broodautomaat nieuweBroodautomaat) {
-    nieuweBroodautomaat.setId(UUID.randomUUID().toString());
-    LOGGER.debug("Creating broodautomaat: {}", nieuweBroodautomaat);
-
     automaatRepository.add(nieuweBroodautomaat);
+
+    LOGGER.debug("Created broodautomaat: {}", nieuweBroodautomaat);
     return nieuweBroodautomaat;
   }
 
