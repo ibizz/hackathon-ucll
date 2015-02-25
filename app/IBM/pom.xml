@@ -48,6 +48,12 @@ http://www.w3.org/2001/XMLSchema-instance ">
       <artifactId>swagger-springmvc</artifactId>
       <version>${swagger.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+      <version>2.5.1</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -55,6 +61,32 @@ http://www.w3.org/2001/XMLSchema-instance ">
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+
+      <!-- Required for IBM Bluemix DevOps deployments -->
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${basedir}</directory>
+                  <includes>
+                    <include>manifest.yml</include>
+                  </includes>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

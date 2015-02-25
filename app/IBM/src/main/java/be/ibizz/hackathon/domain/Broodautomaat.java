@@ -1,8 +1,13 @@
 package be.ibizz.hackathon.domain;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.deser.std.DateDeserializers.DateDeserializer;
+import com.fasterxml.jackson.databind.ser.std.DateSerializer;
 import org.ektorp.support.CouchDbDocument;
 import org.ektorp.support.TypeDiscriminator;
 
+import java.util.Date;
 import java.util.Objects;
 
 @TypeDiscriminator("doc.type == 'broodautomaat'")
@@ -14,6 +19,9 @@ public class Broodautomaat extends CouchDbDocument {
   private boolean witBroodBeschikbaar;
   private boolean bruinBroodBeschikbaar;
   private boolean speciaalBroodBeschikbaar;
+  @JsonSerialize(using = DateSerializer.class)
+  @JsonDeserialize(using = DateDeserializer.class)
+  private Date laatsteUpdate;
 
   public Adres getAdres() {
     return adres;
@@ -69,6 +77,14 @@ public class Broodautomaat extends CouchDbDocument {
 
   public void setWitBroodBeschikbaar(boolean witBroodBeschikbaar) {
     this.witBroodBeschikbaar = witBroodBeschikbaar;
+  }
+
+  public Date getLaatsteUpdate() {
+    return laatsteUpdate;
+  }
+
+  public void setLaatsteUpdate(Date laatsteUpdate) {
+    this.laatsteUpdate = laatsteUpdate;
   }
 
   @Override
