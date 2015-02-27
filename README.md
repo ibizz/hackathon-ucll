@@ -76,5 +76,6 @@ Als finale test
 - [http://www.google.com/design](http://www.google.com/design)
 - [http://www.ibm.com/design/language/inspiration.shtml](http://www.ibm.com/design/language/inspiration.shtml)
 - [http://www.learningjquery.com](http://www.learningjquery.com)
+- [http://mediaqueri.es](http://mediaqueri.es)
 - [http://www.webappers.com](http://www.webappers.com)
 
