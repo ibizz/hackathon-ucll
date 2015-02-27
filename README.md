@@ -66,4 +66,15 @@ Als finale test
 - [Opdract C (ING)](/docs/OpdrachtC.md)
 
 ## Inspiratie
-- http://www.ibm.com/design/language/inspiration.shtml
+- [http://expo.getbootstrap.com]()
+- [http://foundation.zurb.com]()
+- [http://patterntap.com]()
+- [http://plugins.jquery.com]()
+- [http://web.appstorm.net]()
+- [http://www.dribbble.com/tags/interface]()
+- [http://www.getbootstrap.com]()
+- [http://www.google.com/design]()
+- [http://www.ibm.com/design/language/inspiration.shtml]()
+- [http://www.learningjquery.com]()
+- [http://www.webappers.com]()
+
