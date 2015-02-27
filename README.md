@@ -103,6 +103,30 @@ Navigeer in het preferences menu naar Maven => Installations en voeg daar uw lok
 
 ## Installatie CF CLI
 
+De Cloud Foundry Command Line Interface is een set van commando's die je kan uitvoeren om van op je lokale computer de nodige handelingen uit te voeren op bluemix. Dit kan gaan van het installeren van een nieuwe versie van de applicatie tot het bekijken van de logs en zelfs het stoppen en starten van je applicatie.
+
+De laatste versie van deze commando's kan je vinden via https://github.com/cloudfoundry/cli/releases
+
+### Windows
+
+1. Unzip het bestand
+2. Dubbelklik de cf exe
+3. Klik op install, en vervolgens op close
+
+### OS X/Linux installatie
+
+1. Open het .pkg bestand.
+2. Klik op continue in de wizard
+3. Selecteer een installatiefolder, en klik op volgende
+4. Klik op install
+
+### Finale test
+
+Om zeker te zijn dat alles correct geinstalleerd is open je een terminal en typ is 'cf' in. Als alles correct gegaan is zou je de help te zien moeten krijgen.
+
+Voor meer informatie in verband met Cloud Foundry CLI 6 kijk je best eens naar de
+<a href="http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html">Getting Started</a>
+
 ## Deploy starter-app
 
 ## Start jullie hackathon!
