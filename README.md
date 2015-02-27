@@ -13,17 +13,17 @@ Afhankelijk van je Operating System ga je de juiste JVM moeten installeren. Deze
 
 Wij hebben alvast 5 versies voorzien:
 
-* jdk-8u31-windows-i586.exe: 32-bits Windows
-* jdk-8u31-windows-x64.exe: 64-bits Windows
-* jdk-8u31-macosx-x64.dmg: MacOS X
-* jdk-8u31-linux-i586.rpm: 32-bits Linux
-* jdk-8u31-linux-x64.rpm: 64-bits Linux
+* jdk-7u75-windows-i586.exe: 32-bits Windows
+* jdk-7u75-windows-x64.exe: 64-bits Windows
+* jdk-7u75-macosx-x64.dmg: MacOS X
+* jdk-7u75-linux-i586.rpm: 32-bits Linux
+* jdk-7u75-linux-x64.rpm: 64-bits Linux
 
 Nadat de JVM correct is geïnstalleerd op jullie systeem, moeten de omgevingsvariabelen nog correct geplaatst worden.
 
 ### Windows
 ```
-set JAVA_HOME=c:\program files\java\jdk1.8.0_31\
+set JAVA_HOME=c:\program files\java\jdk1.7.0_75\
 set PATH=%JAVA_HOME%\bin;%PATH%
 ```
 
@@ -34,8 +34,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 ### Linux
 ```
-export JAVA_HOME=/usr/java/jdk1.8.0_31/bin/java
-export PATH=$PATH:/usr/java/jdk1.8.0_31/bin
+export JAVA_HOME=/usr/java/jdk1.7.0_75/bin/java
+export PATH=$PATH:/usr/java/jdk1.7.0_75/bin
 ```
 
 Als finale test
