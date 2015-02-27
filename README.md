@@ -69,7 +69,7 @@ Als finale test
 - [http://expo.getbootstrap.com](http://expo.getbootstrap.com)
 - [http://foundation.zurb.com](http://foundation.zurb.com)
 - [http://patterntap.com](http://patterntap.com)
-- [(http://plugins.jquery.com](http://plugins.jquery.com)
+- [http://plugins.jquery.com](http://plugins.jquery.com)
 - [http://web.appstorm.net](http://web.appstorm.net)
 - [http://www.dribbble.com/tags/interface](http://www.dribbble.com/tags/interface)
 - [http://www.getbootstrap.com](http://www.getbootstrap.com)
