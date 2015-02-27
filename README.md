@@ -38,18 +38,63 @@ export JAVA_HOME=/usr/java/jdk1.7.0_75/bin/java
 export PATH=$PATH:/usr/java/jdk1.7.0_75/bin
 ```
 
-Als finale test
+### Finale test
 
 1. Open een command prompt/bash/terminal venster
 2. Voer het volgende commando uit:<br>
    ```
    java --version
    ```
-3. Indien de JVM aan geeft dat hij Java 8 version 31 is, dan is de installatie succesvol. 
+3. Indien de JVM aan geeft dat hij Java 7 version 75 is, dan is de installatie succesvol. 
+
+## Installatie Maven
+
+Maven is een tool om je project te compileren en te bundelen naar een file die geïnstalleerd kan worden op een application server. In de beschrijving van je project (pom.xml) ga je ook de vereiste libraries definiëren die je wil gebruiken in je source code.
+
+Deze applicatie kan je downloaden via http://maven.apache.org/download.cgi waar je ook de juiste versie voor jouw OS moet selecteren.
+
+De maven installatie is altijd een gecomprimeerd bestand, hetwelke je kan extracten naar je lokale file system. Je gaat nadien net als bij de JVM nog de juiste omgevingsvariablen moeten plaatsen.
+
+### Windows
+```
+set M2_HOME=c:\program files\java\jdk1.7.0_75\
+set PATH=%M2_HOME%\bin;%PATH%
+```
+
+### Macos X
+```
+export JAVA_HOME=De locatie van je maven installatie
+```
+
+### Linux
+```
+export JAVA_HOME=De locatie van je maven installatie
+export PATH=$PATH:/usr/java/jdk1.7.0_75/bin
+```
+
+### Finale test
+
+1. Open een command prompt/bash/terminal venster
+2. Voer het volgende commando uit:<br>
+   ```
+   mvn --version
+   ```
+3. Indien Maven opstart en de nodige versie-informatie weer geeft, dan is de installatie succesvol. 
 
 ## Installatie Eclipse
 
-## Installatie Maven
+Ook voor Eclipse zijn er verschillende versies afhankelijk van je Operating System. Op http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/lunasr1a kan je rechts de download links vinden voor de laatste versie van deze IDE.
+
+De Eclipse download is net als de maven installatie een gecomprimeerd bestand waarin 1 hoofd-folder staat. Deze kan je extracten naar een locatie op je harde schijf. (bv naar de c:\, /Macintosh HD/Applications, etc)
+
+### Instellen standaard JDK
+
+Open het Preferences menu via: Window => Preferences
+Navigeer daarin naar Java => Installed JREs en voeg uw geïnstalleerde JDK toe en zet deze vervolgens als de default JDK.
+
+### Instellen Maven
+
+Navigeer in het preferences menu naar Maven => Installations en voeg daar uw lokaal geinstalleerde Maven versie toe en zet deze als de default in plaats van de embedded.
 
 ## Run Applicatie
 - Bekijk logging statement "b.i.h.service.GreetingServiceImpl: Call sayHello()"
