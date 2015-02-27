@@ -1,0 +1,194 @@
+[
+    {
+        "_id": "1",
+        "type": "account",
+        "name": "Delhaize Shop'n Go",
+        "address": "Tervuursevest 58, 3000 Leuven",
+        "channel": "Offtrade",
+        "questionSet": "2"
+    },
+    {
+        "_id": "2",
+        "type": "account",
+        "name": "AD Delhaize",
+        "address": "Tervuursesteenweg 154, 3000 Leuven",
+        "channel": "Offtrade",
+        "questionSet": "1"
+    },
+    {
+        "_id": "3",
+        "type": "account",
+        "name": "Delhaize",
+        "address": "Tervuursevest 19, 3000 Leuven",
+        "channel": "Offtrade",
+        "questionSet": "1"
+    },
+    {
+        "_id": "4",
+        "type": "account",
+        "name": "Carrefour express",
+        "address": "Naamsesteenweg 104, 3001 Heverlee",
+        "channel": "Offtrade",
+        "questionSet": "2"
+    },
+    {
+        "_id": "5",
+        "type": "account",
+        "name": "Carrefour",
+        "address": "Vlinderlaan 1, 3360 Korbeek-Lo",
+        "channel": "Offtrade",
+        "questionSet": "1"
+    },
+    {
+        "_id": "6",
+        "type": "account",
+        "name": "Lidl",
+        "address": "J.P. Minckelersstraat 136, 3000 Leuven",
+        "channel": "Offtrade",
+        "questionSet": "1"
+    },
+    {
+        "_id": "7",
+        "type": "account",
+        "name": "Cafe De Sortie",
+        "address": "Francis Crabbéstraat 11, 3050 Oud-Heverlee",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "8",
+        "type": "account",
+        "name": "Pizza Hut Delivery",
+        "address": "Tervuursevest 10/A, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "3"
+    },
+    {
+        "_id": "9",
+        "type": "account",
+        "name": "OHL",
+        "address": "Kardinaal Mercierlaan 46 3001 Heverlee",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "10",
+        "type": "account",
+        "name": "Cafe Allee",
+        "address": "Oude Markt 41, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "11",
+        "type": "account",
+        "name": "Seven Oaks",
+        "address": "Hanengang 3, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "12",
+        "type": "account",
+        "name": "Ron Blacks",
+        "address": "Mgr. Ladeuzeplein 31, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "13",
+        "type": "account",
+        "name": "Den Ouden Tijd",
+        "address": "Tiensevest 22, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "14",
+        "type": "account",
+        "name": "Downtown Jack",
+        "address": "Parkstraat 40, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "15",
+        "type": "account",
+        "name": "Kinepolis",
+        "address": "Bondgenotenlaan 145-149, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "16",
+        "type": "account",
+        "name": "Alegria",
+        "address": "Oude Markt 31, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "17",
+        "type": "account",
+        "name": "Rodins",
+        "address": "Oude Markt 24, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "18",
+        "type": "account",
+        "name": "Karement",
+        "address": "Oude Markt 43, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "19",
+        "type": "account",
+        "name": "Cafe Jeeskesboom",
+        "address": "Diestsestraat 147, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "20",
+        "type": "account",
+        "name": "Leffe Café",
+        "address": "Bondgenotenlaan 20, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "21",
+        "type": "account",
+        "name": "Cafe De Lantaarn",
+        "address": "Vaartkom 10, 3000 Leuven",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "22",
+        "type": "account",
+        "name": "Cafe Tabor",
+        "address": "Tervuursesteenweg 301, 3001 Heverlee",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "23",
+        "type": "account",
+        "name": "Cafe De Curve",
+        "address": "Baron August de Becker-Remyplein 27, 3010 Kessel-Lo",
+        "channel": "Ontrade",
+        "questionSet": "4"
+    },
+    {
+        "_id": "24",
+        "type": "account",
+        "name": "Restaurant Bleu Blanc",
+        "address": "Maurits Noëstraat 7, 3050 Oud-Heverlee",
+        "channel": "Ontrade",
+        "questionSet": "3"
+    }
+]

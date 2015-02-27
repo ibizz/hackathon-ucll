@@ -11,12 +11,13 @@ http://www.w3.org/2001/XMLSchema-instance ">
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.1.RELEASE</version>
+        <version>1.2.2.RELEASE</version>
     </parent>
 
     <properties>
         <java.version>1.8</java.version>
         <ektorp.version>1.4.2</ektorp.version>
+        <swagger.version>0.9.5</swagger.version>
     </properties>
 
     <dependencies>
@@ -25,30 +26,63 @@ http://www.w3.org/2001/XMLSchema-instance ">
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.ektorp</groupId>
             <artifactId>org.ektorp</artifactId>
             <version>${ektorp.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.ektorp</groupId>
             <artifactId>org.ektorp.spring</artifactId>
             <version>${ektorp.version}</version>
         </dependency>
+        
+        <!-- SWAGGER DOCUMENTATION -->
+   		<dependency>
+      		<groupId>com.mangofactory</groupId>
+      		<artifactId>swagger-springmvc</artifactId>
+      		<version>${swagger.version}</version>
+    	</dependency>
+        
+        <!-- TEST DEPENDENCIES -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
+    	<plugins>
+	      <plugin>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-maven-plugin</artifactId>
+	      </plugin>
+	
+	      <!-- Required for IBM Bluemix DevOps deployments -->
+	      <plugin>
+	        <artifactId>maven-resources-plugin</artifactId>
+	        <version>2.7</version>
+	        <executions>
+	          <execution>
+	            <id>copy-resources</id>
+	            <phase>package</phase>
+	            <goals>
+	              <goal>copy-resources</goal>
+	            </goals>
+	            <configuration>
+	              <outputDirectory>${basedir}/target</outputDirectory>
+	              <resources>
+	                <resource>
+	                  <directory>${basedir}</directory>
+	                  <includes>
+	                    <include>manifest.yml</include>
+	                  </includes>
+	                </resource>
+	              </resources>
+	            </configuration>
+	          </execution>
+	        </executions>
+	      </plugin>
+	    </plugins>
+  	</build>
 </project>

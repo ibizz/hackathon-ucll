@@ -1,0 +1,37 @@
+[
+	{
+	  "type" : "user",
+	  "firstName" : "Jef",
+	  "lastName" : "De Wit"
+	},
+	{
+	  "type" : "user",
+	  "firstName" : "Driss",
+	  "lastName" : "Amri"
+	},
+	{
+	  "type" : "user",
+	  "firstName" : "Andy",
+	  "lastName" : "Van Den Heuvel"
+	},
+	{
+	  "type" : "user",
+	  "firstName" : "Kurt",
+	  "lastName" : "Du Bois"
+	},
+	{
+	  "type" : "user",
+	  "firstName" : "Simon",
+	  "lastName" : "Verhoeven"
+	},
+	{
+	  "type" : "user",
+	  "firstName" :"Wim",
+	  "lastName" : "Tobback"
+	},
+	{
+	  "type" : "user",
+	  "firstName" :"Tom",
+	  "lastName" : "Decan"
+	}
+]

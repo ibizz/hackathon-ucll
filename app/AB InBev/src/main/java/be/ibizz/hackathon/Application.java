@@ -1,5 +1,8 @@
 package be.ibizz.hackathon;
 
+import java.net.MalformedURLException;
+import java.util.List;
+
 import org.ektorp.CouchDbConnector;
 import org.ektorp.CouchDbInstance;
 import org.ektorp.dataload.DataLoader;
@@ -14,9 +17,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ResourceLoader;
 
-import java.net.MalformedURLException;
-import java.util.List;
-
 /**
  * Deze klasse bevat de configuratie van jullie applicatie. Ze bevat een
  * main-methode waardoor je een (embedded) application server kan starten vanuit
@@ -25,18 +25,19 @@ import java.util.List;
 
 @SpringBootApplication
 public class Application {
-  private static final String DATABASE_NAME = "breaddb";
-  @Value("${vcap.services.hackathon-cloudant.credentials.host:}")
-  private String host;
-  @Value("${vcap.services.hackathon-cloudant.credentials.username:}")
-  private String username;
-  @Value("${vcap.services.hackathon-cloudant.credentials.password:}")
-  private String password;
 
+  private static final String DATABASE_NAME = "mysterydb";
+  @Value("${vcap.services.hackathon-cloudant.credentials.host}")
+  private String host;
+  @Value("${vcap.services.hackathon-cloudant.credentials.username}")
+  private String username;
+  @Value("${vcap.services.hackathon-cloudant.credentials.password}")
+  private String password;	
+	
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
   }
-
+  
   @Bean
   public CouchDbConnector couchDb() throws MalformedURLException {
     HttpClient httpClient = new StdHttpClient.Builder()
@@ -53,7 +54,6 @@ public class Application {
 
     CouchDbConnector db = new StdCouchDbConnector(DATABASE_NAME, dbInstance);
     db.createDatabaseIfNotExists();
-
     return db;
   }
 

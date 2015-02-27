@@ -1,0 +1,211 @@
+[
+    {
+        "_id": "1",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is Jupiler available on the shelf?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "2",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is Stella Artois available on the shelf?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "3",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is Leffe available on the shelf?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "4",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is Hoegaarden available on the shelf?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "5",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "How many ABI fridges are at the customer?",
+        "questionType": "Number",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "6",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is the beer shelf well organized / clean?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "7",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Are our products clearly visible on the shelf?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "8",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is there a promotion on our products in the shelf?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "9",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "How many ABI displays are at the customer?",
+        "questionType": "Number",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "10",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "How many ABI displays are at the customer?",
+        "questionType": "List",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z",
+        "possibleValues": [
+            "< 20 euro",
+            "between 20 and 35 euro",
+            "> 35 euro"
+        ]
+    },
+    {
+        "_id": "11",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "What is the price of an average dish?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "12",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is Jupiler available on draft?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "13",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is Leffe available on draft?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "14",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is Hoegaarden available on draft?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "15",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Are the beer glasses clean?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "16",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "Is the beer well served?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    },
+    {
+        "_id": "17",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "How would you describe the theme of the bar?",
+        "questionType": "Checkbox",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z",
+        "possibleValues": [
+            "Trendy",
+            "Old fashioned",
+            "Sports bar",
+            "Brasserie"
+        ]
+    },
+    {
+        "_id": "18",
+        "type": "question",
+        "questionSets": [
+            "1"
+        ],
+        "description": "What is the price of a normal beer (pintje)?",
+        "questionType": "Decimal",
+        "startDate": "2015-01-01T0:0:0.0Z",
+        "endDate": "2015-01-01T0:0:0.0Z"
+    }
+]
