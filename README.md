@@ -99,8 +99,6 @@ Navigeer in het preferences menu naar Maven => Installations en voeg daar uw lok
 ## Run Applicatie
 - Bekijk logging statement "b.i.h.service.GreetingServiceImpl: Call sayHello()"
 
-## Bluemix
-
 ## Installatie CF CLI
 
 De Cloud Foundry Command Line Interface is een set van commando's die je kan uitvoeren om van op je lokale computer de nodige handelingen uit te voeren op bluemix. Dit kan gaan van het installeren van een nieuwe versie van de applicatie tot het bekijken van de logs en zelfs het stoppen en starten van je applicatie.
@@ -126,8 +124,6 @@ Om zeker te zijn dat alles correct geinstalleerd is open je een terminal en typ 
 
 Voor meer informatie in verband met Cloud Foundry CLI 6 kijk je best eens naar de
 <a href="http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html">Getting Started</a>
-
-## Deploy starter-app
 
 ## Start jullie hackathon!
 - [Opdract A (AB-Inbev)](/docs/OpdrachtA.md)
