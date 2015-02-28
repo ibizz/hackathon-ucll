@@ -3,6 +3,7 @@ package be.ibizz.hackathon.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import be.ibizz.hackathon.domain.Account;
@@ -14,6 +15,7 @@ import be.ibizz.hackathon.repository.AnswerRepository;
 import be.ibizz.hackathon.repository.QuestionRepository;
 import be.ibizz.hackathon.repository.UserRepository;
 
+@Profile("cloudant")
 @Service
 public class ApplicationServiceImpl implements ApplicationService {
 

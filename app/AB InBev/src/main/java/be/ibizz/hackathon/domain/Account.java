@@ -3,6 +3,9 @@ package be.ibizz.hackathon.domain;
 import org.ektorp.support.CouchDbDocument;
 import org.ektorp.support.TypeDiscriminator;
 
+/**
+ * Een Account is een cafe, supermarkt of restaurant.
+ */
 @TypeDiscriminator("doc.type == 'account'")
 public class Account extends CouchDbDocument {
 
@@ -12,6 +15,17 @@ public class Account extends CouchDbDocument {
 	private String name;
 	private String address;
 	private String channel;
+	
+	public Account() {
+	}
+	
+	public Account(String questionSet, String name, String address, String channel) {
+		this.type = "account";
+		this.questionSet = questionSet;
+		this.name = name;
+		this.address = address;
+		this.channel = channel;
+	}
 	
 	public String getType() {
 		return type;

@@ -5,6 +5,12 @@ import java.util.Date;
 import org.ektorp.support.CouchDbDocument;
 import org.ektorp.support.TypeDiscriminator;
 
+/**
+ * Een antwoord is het antwoord op 1 bepaalde vraag. Let op, we slaan hier 
+ * de omschrijving van de vraag op en niet de questionId. 
+ * 
+ * We kiezen ervoor dit te denormaliseren om makkelijker achteraf te kunnen tonen in het overzicht.
+ */
 @TypeDiscriminator("doc.type == 'answer'")
 public class Answer extends CouchDbDocument {
 
@@ -15,6 +21,18 @@ public class Answer extends CouchDbDocument {
 	private String question;
 	private String answer;
 	private Date visitDate;
+
+	public Answer() {
+	}
+	
+	public Answer(String accountId, String userId, String question, String answer, Date visitDate) {
+		this.type = "answer";
+		this.accountId = accountId;
+		this.userId = userId;
+		this.question = question;
+		this.answer = answer;
+		this.visitDate = visitDate;
+	}
 
 	public String getType() {
 		return type;

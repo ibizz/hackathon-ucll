@@ -12,6 +12,15 @@ public class User extends CouchDbDocument{
 	private String firstName;
 	private String lastName;
 	
+	public User() {
+	}
+	
+	public User(String firstName, String lastName) {
+		this.type = "user";
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 	public String getType() {
 		return type;
 	}

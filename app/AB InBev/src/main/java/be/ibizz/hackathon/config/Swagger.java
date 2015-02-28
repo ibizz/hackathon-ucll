@@ -12,6 +12,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @EnableSwagger
+/**
+ * Swagger is een tool die gebruikt kan worden om de API van de toepassing te documenteren. 
+ * Indien je naar http://localhost:8080/docs/index.html surft, zie je de interface.
+ */
 public class Swagger extends WebMvcConfigurerAdapter {
 	
   @Autowired

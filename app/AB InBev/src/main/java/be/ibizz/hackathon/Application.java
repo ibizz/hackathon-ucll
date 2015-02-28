@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.io.ResourceLoader;
 
 /**
@@ -26,12 +27,16 @@ import org.springframework.core.io.ResourceLoader;
 @SpringBootApplication
 public class Application {
 
+  /**
+   * De waarden die hier staan zijn als environment variables gedefinieerd op Bluemix. 
+   * We kunnen ze gebruiken om in deze velden te injecteren en configureren.
+   */
   private static final String DATABASE_NAME = "mysterydb";
-  @Value("${vcap.services.hackathon-cloudant.credentials.host}")
+  @Value("${vcap.services.hackathon-cloudant.credentials.host:}")
   private String host;
-  @Value("${vcap.services.hackathon-cloudant.credentials.username}")
+  @Value("${vcap.services.hackathon-cloudant.credentials.username:}")
   private String username;
-  @Value("${vcap.services.hackathon-cloudant.credentials.password}")
+  @Value("${vcap.services.hackathon-cloudant.credentials.password:}")
   private String password;	
 	
   public static void main(String[] args) {
@@ -39,6 +44,13 @@ public class Application {
   }
   
   @Bean
+  @Profile("cloudant")
+  /**
+   * Cloudant is gebaseerd op CouchDb. We gebruiken daarom de CouchDb settings om 
+   * onze database te configureren. 
+   * 
+   * We beginnen ook steeds met een nieuwe database als de applicatie heropstart.
+   */
   public CouchDbConnector couchDb() throws MalformedURLException {
     HttpClient httpClient = new StdHttpClient.Builder()
       .url("https://" + host)
@@ -58,6 +70,7 @@ public class Application {
   }
 
   @Bean
+  @Profile("cloudant")
   public InitialDataLoader initialDataLoader(List<DataLoader> loaders, ResourceLoader resourceLoader) throws MalformedURLException {
     return new InitialDataLoader(loaders, resourceLoader);
   }

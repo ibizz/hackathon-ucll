@@ -11,7 +11,7 @@ public interface ApplicationService {
 
 	List<Account> getAccounts();
 	
-	List<Question> getQuestions(String accountId);
+	List<Question> getQuestions(String questionSet);
 	
 	List<User> getUsers();
 	

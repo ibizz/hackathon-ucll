@@ -13,9 +13,18 @@ public class Question extends CouchDbDocument {
 	private List<String> questionSets;
 	private String description;
 	private String questionType;
-	private String startDate;
-	private String endDate;
 	private List<String> possibleValues;
+
+	public Question() {
+	}
+	
+	public Question(List<String> questionSets, String description, String questionType, List<String> possibleValues) {
+		this.type = "question";
+		this.questionSets = questionSets;
+		this.description = description;
+		this.questionType = questionType;
+		this.possibleValues = possibleValues;
+	}
 
 	public String getType() {
 		return type;
@@ -47,22 +56,6 @@ public class Question extends CouchDbDocument {
 
 	public void setQuestionType(String questionType) {
 		this.questionType = questionType;
-	}
-	
-	public void setStartDate(String startDate) {
-		this.startDate = startDate;
-	}
-	
-	public String getStartDate() {
-		return startDate;
-	}
-	
-	public void setEndDate(String endDate) {
-		this.endDate = endDate;
-	}
-	
-	public String getEndDate() {
-		return endDate;
 	}
 
 	public List<String> getPossibleValues() {
