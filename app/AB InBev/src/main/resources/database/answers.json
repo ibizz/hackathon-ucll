@@ -2,8 +2,9 @@
     {
         "type": "answer",
         "accountId": "1",
+        "userId": "1",
         "question": "Is Jupiler available on the shelf?",
-        "answer": "J",
-        "visit_date": "27/02/2015"
+        "answer": "Yes",
+        "visitDate": "2015-02-25T18:25:43.511Z"
     }
 ]

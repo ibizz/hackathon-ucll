@@ -6,9 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import be.ibizz.hackathon.domain.Account;
+import be.ibizz.hackathon.domain.Answer;
 import be.ibizz.hackathon.domain.Question;
 import be.ibizz.hackathon.domain.User;
 import be.ibizz.hackathon.repository.AccountRepository;
+import be.ibizz.hackathon.repository.AnswerRepository;
 import be.ibizz.hackathon.repository.QuestionRepository;
 import be.ibizz.hackathon.repository.UserRepository;
 
@@ -17,6 +19,9 @@ public class ApplicationServiceImpl implements ApplicationService {
 
 	@Autowired 
 	private AccountRepository accountRepository;
+	
+	@Autowired
+	private AnswerRepository answerRepository;
 	
 	@Autowired
 	private QuestionRepository questionRepository;
@@ -31,12 +36,19 @@ public class ApplicationServiceImpl implements ApplicationService {
 	
 	@Override
 	public List<Question> getQuestions(String questionSet) {
-		return questionRepository.findByQuestionSet(questionSet);
+		return questionRepository.getQuestionSet(questionSet);
 	}
 
 	@Override
 	public List<User> getUsers() {
 		return userRepository.getAll();
+	}
+
+	@Override
+	public void addAnswers(List<Answer> answers) {
+		for(Answer answer : answers) {
+			answerRepository.add(answer);
+		}
 	}
 
 

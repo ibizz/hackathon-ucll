@@ -12,9 +12,8 @@ import be.ibizz.hackathon.domain.Question;
 
 @Repository
 @Views({
-	@View(name = "all", map = "function(doc) { if (doc.type == 'question' ) emit( null, doc )}"),
-	@View(name = "by_questionSet", map = "function(doc) { if (doc.type == 'question' && doc.questionSets) emit( null, doc )}")
-})
+	@View(name = "all", map = "function(doc) {if (doc.type == 'question') emit(null, doc)}"),
+	@View(name = "by_questionSet", map = "function(doc) {if(doc.type == 'question' && doc.questionSets.length > 0) {for(var i in doc.questionSets) {emit(doc.questionSets[i], null);}}}")})
 public class QuestionRepository extends AbstractCloudantRepository<Question> {
 	
 	@Autowired
@@ -22,7 +21,7 @@ public class QuestionRepository extends AbstractCloudantRepository<Question> {
 	    super(Question.class, db, "classpath:/database/questions.json");   
 	}
 	
-	public List<Question> findByQuestionSet(String questionSet) {
+	public List<Question> getQuestionSet(String questionSet) {	
 		return queryView("by_questionSet", questionSet);
 	}
 

@@ -1,35 +1,42 @@
 [
 	{
+	  "_id": "1",
 	  "type" : "user",
 	  "firstName" : "Jef",
 	  "lastName" : "De Wit"
 	},
 	{
+	  "_id": "2",
 	  "type" : "user",
 	  "firstName" : "Driss",
 	  "lastName" : "Amri"
 	},
 	{
+	  "_id": "3",
 	  "type" : "user",
 	  "firstName" : "Andy",
 	  "lastName" : "Van Den Heuvel"
 	},
 	{
+	  "_id": "4",
 	  "type" : "user",
 	  "firstName" : "Kurt",
 	  "lastName" : "Du Bois"
 	},
 	{
+	  "_id": "5",
 	  "type" : "user",
 	  "firstName" : "Simon",
 	  "lastName" : "Verhoeven"
 	},
 	{
+	  "_id": "6",
 	  "type" : "user",
 	  "firstName" :"Wim",
 	  "lastName" : "Tobback"
 	},
 	{
+	  "_id": "7",
 	  "type" : "user",
 	  "firstName" :"Tom",
 	  "lastName" : "Decan"

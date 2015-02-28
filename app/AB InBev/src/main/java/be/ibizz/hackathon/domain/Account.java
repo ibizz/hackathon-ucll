@@ -7,7 +7,6 @@ import org.ektorp.support.TypeDiscriminator;
 public class Account extends CouchDbDocument {
 
 	private static final long serialVersionUID = 6068195162426591887L;
-
 	private String type;
 	private String questionSet;
 	private String name;

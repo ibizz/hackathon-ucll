@@ -13,11 +13,11 @@ import be.ibizz.hackathon.util.loader.CustomDataLoader;
 public abstract class AbstractCloudantRepository<T> extends CouchDbRepositorySupport<T> implements DataLoader  {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(AccountRepository.class);
-	private String dataFile;
+	private String[] dataFiles;
 	
-	protected AbstractCloudantRepository(Class<T> type, CouchDbConnector db, String dataFile) {
+	protected AbstractCloudantRepository(Class<T> type, CouchDbConnector db, String... dataFiles) {
 		super(type, db);
-		this.dataFile = dataFile;
+		this.dataFiles = dataFiles;
 		initStandardDesignDocument();
 	}
 
@@ -28,12 +28,14 @@ public abstract class AbstractCloudantRepository<T> extends CouchDbRepositorySup
 	
 	@Override
 	public void allDataLoaded() {
-		LOGGER.info("Uploaded '{}'", dataFile);
+		for(String dataFile : dataFiles) {
+			LOGGER.info("Uploaded '{}'", dataFile);
+		}
 	}
 	
 	@Override
 	public String[] getDataLocations() {
-		return new String[]{dataFile};
+		return dataFiles;
 	}
 	
 }
