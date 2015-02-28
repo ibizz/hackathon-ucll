@@ -5,6 +5,12 @@ import java.util.List;
 import org.ektorp.support.CouchDbDocument;
 import org.ektorp.support.TypeDiscriminator;
 
+/**
+ * Een vraag is altijd onderdeel van 1 of meerdere questionSets. Afhankelijk van het question type moet er 
+ * op de view een andere soort rendering gebeuren.
+ * 
+ * Indien het een multiple choice antwoord betreft, worden 'possibleValues' meegelevered.
+ */
 @TypeDiscriminator("doc.type == 'question'")
 public class Question extends CouchDbDocument {
 

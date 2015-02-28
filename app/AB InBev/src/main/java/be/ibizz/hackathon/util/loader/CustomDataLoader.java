@@ -23,9 +23,7 @@ public class CustomDataLoader {
   }
 
   /**
-   * Reads documents from the reader and stores them in the database.
-   *
-   * @param in
+   * Leest documenten van de reader slaat ze op in de database.
    */
   public void load(Reader in, Class<?> clazz) {
     try {

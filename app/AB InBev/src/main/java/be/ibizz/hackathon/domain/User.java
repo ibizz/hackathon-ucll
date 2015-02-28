@@ -3,6 +3,10 @@ package be.ibizz.hackathon.domain;
 import org.ektorp.support.CouchDbDocument;
 import org.ektorp.support.TypeDiscriminator;
 
+/**
+ * Een user is een gebruiker van het system. Bij de start van de hackathon wordt deze nog niet gebruikt. 
+ * Jullie kunnen deze wel gebruiken en verder uitbreiden indien gewenst.
+ */
 @TypeDiscriminator("doc.type == 'user'")
 public class User extends CouchDbDocument{
 

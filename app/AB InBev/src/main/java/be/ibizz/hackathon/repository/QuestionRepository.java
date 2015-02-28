@@ -11,6 +11,10 @@ import org.springframework.stereotype.Repository;
 
 import be.ibizz.hackathon.domain.Question;
 
+/**
+ * Repository om accounts te lezen/schrijven. 
+ * We beschrijven hier een extra view om de vragen op te halen aan de hand van een questionSet. 
+ */
 @Repository
 @Profile("cloudant")
 @Views({

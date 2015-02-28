@@ -8,6 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import be.ibizz.hackathon.domain.User;
 
+/**
+ * Repository om gebruikers te lezen/schrijven. We gebruiken enkel de standaard functionaliteit, 
+ * Er zijn dus geen extra methodes aanwezig.
+ */
 @Repository
 @Profile("cloudant")
 @View(name = "all", map = "function(doc) { if (doc.type == 'user' ) emit( null, doc )}")
