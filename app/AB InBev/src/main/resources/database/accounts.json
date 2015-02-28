@@ -1,170 +1,290 @@
 [
     {
         "type": "account",
+        "accountType": "S",
         "name": "Delhaize Shop'n Go",
         "address": "Tervuursevest 58, 3000 Leuven",
         "channel": "Offtrade",
-        "questionSet": "2"
+        "questionSet": "2",
+        "latitude": 50.86969,
+        "longitude": 4.69570,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "S",
         "name": "AD Delhaize",
         "address": "Tervuursesteenweg 154, 3000 Leuven",
         "channel": "Offtrade",
-        "questionSet": "1"
+        "questionSet": "1",
+        "latitude": 50.87503,
+        "longitude": 4.67521,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "S",
         "name": "Delhaize",
         "address": "Tervuursevest 19, 3000 Leuven",
         "channel": "Offtrade",
-        "questionSet": "1"
+        "questionSet": "1",
+        "latitude": 50.86852,
+        "longitude": 4.69633,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "S",
         "name": "Carrefour express",
         "address": "Naamsesteenweg 104, 3001 Heverlee",
         "channel": "Offtrade",
-        "questionSet": "2"
+        "questionSet": "2",
+        "latitude": 50.86578,
+        "longitude": 4.69604,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "S",
         "name": "Carrefour",
         "address": "Vlinderlaan 1, 3360 Korbeek-Lo",
         "channel": "Offtrade",
-        "questionSet": "1"
+        "questionSet": "1",
+        "latitude": 50.86558,
+        "longitude": 4.74712,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "S",
         "name": "Lidl",
         "address": "J.P. Minckelersstraat 136, 3000 Leuven",
         "channel": "Offtrade",
-        "questionSet": "1"
+        "questionSet": "1",
+        "latitude": 50.88436,
+        "longitude": 4.70492,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Cafe De Sortie",
         "address": "Francis Crabbéstraat 11, 3050 Oud-Heverlee",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.83823,
+        "longitude": 4.66489,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "R",
         "name": "Pizza Hut Delivery",
         "address": "Tervuursevest 10/A, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "3"
+        "questionSet": "3",
+        "latitude": 50.86899,
+        "longitude": 4.69785,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "OHL",
         "address": "Kardinaal Mercierlaan 46 3001 Heverlee",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.86824,
+        "longitude": 4.69449,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Cafe Allee",
         "address": "Oude Markt 41, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.87827,
+        "longitude": 4.69972,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
         "name": "Seven Oaks",
+        "accountType": "C",
         "address": "Hanengang 3, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.87831,
+        "longitude": 4.70364,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Ron Blacks",
         "address": "Mgr. Ladeuzeplein 31, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.87852,
+        "longitude": 4.70561,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Den Ouden Tijd",
         "address": "Tiensevest 22, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.88171,
+        "longitude": 4.71444,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Downtown Jack",
         "address": "Parkstraat 40, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.87340,
+        "longitude": 4.70173,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Kinepolis",
         "address": "Bondgenotenlaan 145-149, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.88085,
+        "longitude": 4.71222,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Alegria",
         "address": "Oude Markt 31, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.87820,
+        "longitude": 4.69967,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "R",
         "name": "Rodins",
         "address": "Oude Markt 24, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.87855,
+        "longitude": 4.69994,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Karement",
         "address": "Oude Markt 43, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.87828,
+        "longitude": 4.69973,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Cafe Jeeskesboom",
         "address": "Diestsestraat 147, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.88125,
+        "longitude": 4.70859,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Leffe Café",
         "address": "Bondgenotenlaan 20, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.87941,
+        "longitude": 4.70459,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Cafe De Lantaarn",
         "address": "Vaartkom 10, 3000 Leuven",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.88766,
+        "longitude": 4.70311,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Cafe Tabor",
         "address": "Tervuursesteenweg 301, 3001 Heverlee",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.87423,
+        "longitude": 4.67143,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "C",
         "name": "Cafe De Curve",
         "address": "Baron August de Becker-Remyplein 27, 3010 Kessel-Lo",
         "channel": "Ontrade",
-        "questionSet": "4"
+        "questionSet": "4",
+        "latitude": 50.88585,
+        "longitude": 4.71925,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     },
     {
         "type": "account",
+        "accountType": "R",
         "name": "Restaurant Bleu Blanc",
         "address": "Maurits Noëstraat 7, 3050 Oud-Heverlee",
         "channel": "Ontrade",
-        "questionSet": "3"
+        "questionSet": "3",
+        "latitude": 50.82325,
+        "longitude": 4.65561,
+        "surveyStartDate": "2015-01-01T0:0:0.0Z",
+        "surveyEndDate": "2015-12-31T0:0:0.0Z"
     }
 ]

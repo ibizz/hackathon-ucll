@@ -103,8 +103,7 @@
     {
         "type": "question",
         "questionSets": [
-            "3",
-            "4"
+            "3"
         ],
         "description": "Is Jupiler available on draft?",
         "questionType": "Checkbox"

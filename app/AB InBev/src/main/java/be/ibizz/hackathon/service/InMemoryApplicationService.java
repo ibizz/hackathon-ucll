@@ -27,8 +27,9 @@ public class InMemoryApplicationService implements ApplicationService {
 	@PostConstruct
 	public void init() {
 		accounts = new ArrayList<>();
-		accounts.add(new Account("2", "Delhaize Shop'n Go", "Tervuursevest 58, 3000 Leuven", "Offtrade"));
-		
+		accounts.add(new Account("2", "S", "Delhaize Shop'n Go", "Tervuursevest 58, 3000 Leuven", "Offtrade", 50.86969, 
+				4.69570, "2015-01-01T0:0:0.0Z", "2015-12-31T0:0:0.0Z"));
+				
 		questions = new ArrayList<>();
 		questions.add(new Question(Arrays.asList("1"), "Is Jupiler available on the shelf?", "Checkbox", null));
 		
